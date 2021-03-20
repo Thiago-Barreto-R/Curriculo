@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+    background-image: url(../img/Logo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo1 {
+    display: flex;
+    font-family: sans-serif;
+    color: #fff;
+    align-items: center;
+}
+
+.FotoDoPerfil img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 30px 0px 0px 90px;
+    z-index: 10;
+}
+
+.Nome-atuacao {
+    margin: 0px 0px 0px 190px;
+}
+
+.conteudo-2 {
+    margin: 0 auto;
+    width: 90%;
+    font-family: sans-serif;
+    display: grid;
+}
+
+
+section {
+    margin: 0 auto;
+    width: 90%;
+    line-height: 30px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: rgb(221, 215, 215);
+}
+
+h2 {
+    letter-spacing: 8px;
+}
+
+.borda {
+    border: 3px solid gray;
+    margin: 10px 0px;
+    width: 100px;
+}
+
+.lado-left {
+    padding: 50px;
+}
+
+.perfil {
+    margin-bottom: 30px;
+}
+
+
+.contatos {
+    margin-bottom: 30px;
+}
+
+.lado-right {
+    padding: 50px;
+    
+}
+
+.qualificacoes {
+    margin-bottom: 30px;
+}
+
+.cursos {
+    margin-bottom: 30px;
+}
+
+.projetos {
+    margin-bottom: 30px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color:  rgb(155, 149, 149);
+}
+
+@media (max-width: 770px){
+    header {
+        width: 90%;
+        height: 250px;
+
+        display: flex;
+    }
+
+    .FotoDoPerfil img {
+        width: 100px;
+        margin: 10px 0px 30px 20px;
+    }
+
+    .conteudo1 {
+        display: block;
+    }
+
+    .Nome-atuacao {
+        margin-left: 40px;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 380px){
+    .conteudo-2 {
+        margin: auto;
+        display: flex;
+
+    }
+    .lado-left {
+        margin-left: -30px;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        padding: 20px;
+    }
+
+    .lado-right {
+        margin-left: -40px;
+        
+    }
+}
+
+@media (max-width: 315px) {
+    header {
+        height: 320px;
+    }
+
+    .Nome-atuacao {
+        margin-top: 30px;
+    }
+}
